@@ -1,0 +1,52 @@
+package marts;
+import java.util.Scanner;
+public class Test2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner (System.in);
+		
+		int sales;
+		int hour;
+		double commission;
+		double wages = 5.00;
+		double totalwages;
+		double dailywages;
+		
+		System.out.print("Plese enter your sales : RM");
+		sales = scan.nextInt();
+		
+		System.out.print("Please enter the hours you worked : ");
+		hour = scan.nextInt();
+		
+		if ((sales >= 150) && (sales <=300)) {
+			commission = (sales*5)/100;
+			totalwages = hour * wages;
+			dailywages = totalwages + commission;
+			System.out.println("The total commission you got : RM" + commission);
+			System.out.println("The total of daily wages you got : RM" + dailywages);
+			
+		}
+		
+		if ((sales >= 301) && (sales <=500)) {
+			commission = (sales*10)/100;
+			totalwages = hour * wages;
+			dailywages = totalwages + commission;
+			System.out.println("The total commission you got : RM" + commission);
+			System.out.println("The total of daily wages you got : RM" + dailywages);
+			
+		}
+		
+		else if (sales >= 500) {
+			commission = (sales*15)/100;
+			totalwages = hour * wages;
+			dailywages = totalwages + commission;
+			System.out.println("The total commission you got : RM" + commission);
+			System.out.println("The total of daily wages you got : RM" + dailywages);
+		}
+		
+		scan.close();
+
+	}
+
+}
