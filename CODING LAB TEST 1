@@ -64,7 +64,7 @@ public class Test1 {
 			System.out.println("The price to paid : RM" + y );
 		}
 		
-		
+		scan.close();
 
 	}
 
